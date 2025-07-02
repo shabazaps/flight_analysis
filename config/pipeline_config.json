@@ -1,0 +1,30 @@
+{
+  "source": {
+    "s3_parquet_path": "s3://shabaz_bucket/us_flights_data/raw/"
+  },
+  "hdfs": {
+    "base_output_path": "hdfs:///user/shabaz/flight_outputs/"
+  },
+  "hive": {
+    "database": "flight_hive_db"
+  },
+  "mysql": {
+    "host": "rds-flight-db.c9e2446ms42q.ap.south-1.rds.amazonaws.com",
+    "port": 3306,
+    "user": "shabaz",
+    "password": "**********",
+    "database": "flights_db"
+  },
+  "tables": [
+    "top10_departure_delay_airports",
+    "top10_arrival_delay_airlines",
+    "national_avg_delay",
+    "cancellation_rate_by_airline",
+    "cancellation_rate_by_airport",
+    "cancellation_rate_by_month",
+    "cancellation_reasons",
+    "common_diversion_airports",
+    "diversion_rate_by_airline",
+    "diversion_impact"
+  ]
+}

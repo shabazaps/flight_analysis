@@ -1,0 +1,8 @@
+spark-submit --master yarn --deploy-mode client transform_and_write.py
+
+chmod +x sqoop_export_all.sh
+sqoop_export_all.sh
+
+
+mysql -h rds-flight-db.c9e2446ms42q.ap.south-1.rds.amazonaws.com -P 3306 -u shabaz-p
+
